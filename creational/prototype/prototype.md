@@ -10,4 +10,21 @@ let obj={}
 let newObject=Object.create(obj,{newField:{value:''}})
 
 
-con clases tambien funciona con el objeto
+con clases tambien funciona con el objeto pero se debe implenetar una interfaz IProtoype que tiene el metodo clone().
+Puede ser una clonacion superficial(1 nivel) o profunda (Todos los niveles)
+
+
+ejemplo class
+MyClass implements IProtoType {
+            // A Concrete Class
+            field: number[]
+
+            constructor(field: number[]) {
+                this.field = field // any value of any type
+            }
+
+            clone() {
+                return Object.assign({}, this) // shallow copy
+                // return JSON.parse(JSON.stringify(this)); //deep copy
+            }
+        }
