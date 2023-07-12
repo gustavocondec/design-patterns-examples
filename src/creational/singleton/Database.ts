@@ -9,9 +9,14 @@ class Database { // Best!!!
 
   query (sql: string): string {
     return ''
-  }
+  } 
 }
-
-const a = new Database() // rechaza => Ok
+ 
+//const a = new Database() // rechaza => Ok
 const b = Database.getInstance() // Ok
-Database.instance// Not accesible => Ok
+//Database.instance// Not accesible => Ok
+
+
+
+
+export {}

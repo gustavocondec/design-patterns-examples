@@ -1,5 +1,5 @@
 class Settings1 {
-  static instance: Settings1
+  static instance :  Settings1
   private constructor () {}
   static getInstance (): Settings1 {
     // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
@@ -7,7 +7,7 @@ class Settings1 {
     return Settings1.instance
   }
 }
-const a = new Settings1()
+//const a = new Settings1() // no se puede
 const b = Settings1.getInstance()
 Settings1.instance = 'hola' // Mal
 // --------------------------------------------------------
@@ -20,12 +20,12 @@ class Settings4 { // Bien !!
     return Settings4.instance
   }
 }
-const d = new Settings4()
+//const d = new Settings4() // No funcionara
 const d4 = Settings4.getInstance() // Ok
-Settings4.instance = 'hola' // Ok, no se puede modificar desde fuera
+//Settings4.instance = 'hola' // Ok, no se puede modificar desde fuera
 // --------------------------------------------------------
 class Settings2 {// bien
-  static readonly instance: Settings2
+  static  instance: Settings2
   constructor () {
     // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
     if (!Settings2.instance) Settings2.instance = new Settings2()
@@ -37,7 +37,7 @@ class Settings2 {// bien
   }
 }
 const c = new Settings2()
-Settings2.instance = 'hola' // Prohibido => Ok!
+//Settings2.instance = 'hola' // Prohibido => Ok!
 
 // --------------------------------------------------------
 class Settings3 {// bien
@@ -51,5 +51,10 @@ class Settings3 {// bien
     return Settings3.instance
   }
 }
-const d = new Settings2()
-Settings3.instance = 'hola' // Prohibido => Ok!
+const de = new Settings2()
+//Settings3.instance = 'hola' // Prohibido => Ok!
+
+
+
+
+export {}

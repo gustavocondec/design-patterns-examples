@@ -139,3 +139,9 @@ function clientCode (director: Director) {
 
 const director = new Director()
 clientCode(director)
+
+
+
+
+
+export {}

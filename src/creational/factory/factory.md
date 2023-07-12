@@ -1,0 +1,1 @@
+Permite delegar la creacion de un objeto conreto que implementa una interfaz en base a un tipo, en base al polimorfismo son intercambiables

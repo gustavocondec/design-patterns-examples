@@ -35,3 +35,7 @@ OBJECT2.field[1] = 101
 // Comparing OBJECT1 and OBJECT2
 console.log(`OBJECT2: ${JSON.stringify(OBJECT2)}`)
 console.log(`OBJECT1: ${JSON.stringify(OBJECT1)}`)
+
+
+
+export {}

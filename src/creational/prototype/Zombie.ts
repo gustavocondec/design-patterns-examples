@@ -43,3 +43,7 @@ ZombieClass.prototype.name = 'aea'
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 console.log(new ZombieClass().name) // aea
+
+
+
+export {}

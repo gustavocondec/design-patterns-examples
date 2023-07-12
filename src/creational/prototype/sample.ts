@@ -4,8 +4,8 @@
  */
 class Prototype {
   public primitive: any
-  public component: object
-  public circularReference: ComponentWithBackReference
+  public component: any
+  public circularReference: any
 
   public clone (): this {
     const clone = Object.create(this)
@@ -68,3 +68,7 @@ function clientCode () {
 }
 
 clientCode()
+
+
+
+export {}
