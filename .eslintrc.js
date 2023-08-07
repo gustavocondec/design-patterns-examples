@@ -13,5 +13,7 @@ module.exports = {
     project: ['./tsconfig.json']
   },
   rules: {
+    '@typescript-eslint/explicit-function-return-type': 1,
+    '@typescript-eslint/no-extraneous-class': 1
   }
 }

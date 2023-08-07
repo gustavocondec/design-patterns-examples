@@ -21,6 +21,4 @@ class HotDog {
 const myLunch = new HotDog('gluten free')
 myLunch.addKetchup().addMustard().addKraut()
 
-
-
 export {}

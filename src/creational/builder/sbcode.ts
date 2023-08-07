@@ -54,6 +54,5 @@ class Director {
 // The Client
 const PRODUCT1 = Director.construct()
 console.log(PRODUCT1.parts)
- 
 
 export {}
